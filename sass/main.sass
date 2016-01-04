@@ -1,0 +1,61 @@
+@import bourbon
+@import vars.sass
+
+$main-color: #f39f18
+$headers-color: #2c3949
+
+*::-webkit-input-placeholder
+	color: #fff
+	opacity: 1
+
+*:-moz-placeholder
+	color: #fff
+	opacity: 1
+
+*::-moz-placeholder
+	color: #fff
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #fff
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #fff
+body input:required:valid,
+body textarea:required:valid
+	color: #fff
+
+
+.homesect
+	padding-top: 70px
+	background-color: #f9f9f9
+	.section_head
+		margin-bottom: 85px
+		p
+			margin-top: 55px
+		h2
+			text-align: center
+			margin-bottom: 0
+			position: relative
+			&::after
+				content: ''
+				display: inline-block
+				position: absolute
+				width: 165px
+				height: 4px
+				background-color: $main-color
+				bottom: -28px
+				left: 50%
+				transform: translate(-50%)
+
+
+
+//ALWAYS END
+@import media
+
+//Load Libs SASS
+@import app/libs/animate/animate.sass
+
+
