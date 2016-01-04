@@ -44,6 +44,7 @@ h3
 
 b, strong
 	font-family: "RalewayBold", $helvetica
+	font-weight: normal
 
 .before
 	content: ''
@@ -261,10 +262,18 @@ input
 	line-height: em(22px)
 	padding: 12px 35px
 	transition: all .5s ease
+	text-decoration: none
 	&:hover
 		background-color: #FFB338
+		text-decoration: none
+		color: #111
 	&:active
 		background-color: #e18d06
+		text-decoration: none
+		color: #111
+	&:focus
+		color: #111
+		text-decoration: none
 
 .arrow
 	display: inline-block
