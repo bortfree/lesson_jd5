@@ -32,19 +32,44 @@
 	.phone
 		padding-right: 60px
 
+	.item_center_icon
+		left: 0
+
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
 	/**/
+	.section_content
+		.s1_bottom_triangle
+			background-size: cover
+
 
 	.header_wrap
 		h1
 			margin-top: 0
 
+	.imfo_item
+		margin: 50px 0	
+
+	.section_3
+		.section_content
+			padding-top: 98px
+			.item_center
+				margin-top: -80px
+			.imfo_item 
+    		margin-top: 0
+
+  .item_center_icon
+  	left: -17px
+  	top: 50px
+
+
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
 	
+
+
 	/*Disable Animation on Mobile Devices*/
 	.animated
 		/*CSS transitions*/
@@ -65,6 +90,41 @@
 		-o-animation: none !important
 		-ms-animation: none !important
 		animation: none !important
+	
+	.imfo_item
+		max-width: 100%
+		margin-top: 20px
+		margin-bottom: 20px
+		border-bottom: none
+		&:first-child
+			margin-top: 0
+
+	.info_item_wrap_bottom:nth-child(2)
+		.imfo_item
+			margin-top: 20px
+			display: block
+	
+	.item_right
+		float: none
+
+	.item_center
+		padding: 0
+
+	.section_3
+		.section_content
+			.info_item_wrap_bottom:nth-child(2) 
+		    margin-top: 0
+		    padding-left: 0
+		    top: 0
+		    margin-left: 11px
+			.item_center 
+   			margin-top: 0
+   			margin-left: 11px
+		   	
+	.item_center_icon
+		   		display: none
+
+
 
 
 /* Extra Small Devices, Phones */
