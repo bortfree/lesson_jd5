@@ -5,6 +5,8 @@ $(function() {
 		$(".main-menu").slideToggle();
 	});
 
+	$(".cards .card").equalHeights();
+
 	//SVG Fallback
 	if(!Modernizr.svg) {
 		$("img[src*='svg']").attr("src", function() {
