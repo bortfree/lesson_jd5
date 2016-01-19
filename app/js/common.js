@@ -14,10 +14,25 @@ $(function() {
 				ths.removeClass("card-off").addClass("card-on");
 			}, 150*index);
 		});
-
-		
-		
 	});
+
+	$(".section_5"). waypoint(function(){
+
+		$(".section_5 .tc_item").each(function(index) {
+			var ths = $(this);
+			setTimeout(function() {
+				var myAnimation = new DrawFillSVG({
+					elementId: "tc-svg-" + index
+				});
+				ths.removeClass("").addClass("");
+			}, 500*index);
+		} );
+		this.destroy();
+	} );
+
+
+	
+
 
 	//SVG Fallback
 	if(!Modernizr.svg) {

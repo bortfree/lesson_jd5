@@ -292,14 +292,23 @@ body textarea:required:valid
 	color: #f9f9f9
 	font-size: em(18px)
 	margin-top: 30px
-	text-align: left
+	text-align: center
+	margin-left: 40px
 	.tc_item
 		width: 290px
 		height: 128px
 		display: inline-block
 		position: relative
 		margin-left: -43px
+		text-align: left
 		vertical-align: top
+		transition: all .5s ease
+		&:hover
+			transform: scale(1.08)
+			z-index: 3
+			path
+				fill-opacity: 0!important
+				stroke-opacity: 1!important
 		&:first-child
 			.tc_content
 				margin-left: 40px
@@ -308,6 +317,7 @@ body textarea:required:valid
 			top: 0
 			left: 0
 			z-index: 0
+
 		.tc_content
 			z-index: 1
 			position: relative
@@ -325,6 +335,33 @@ body textarea:required:valid
 .section_5
 	.section_bottom
 		margin-top: 80px
+
+
+.teams
+	@extend .cards
+	.team
+		@extend .card 
+		background-color: #e5e5e5
+		.card_icon
+			overflow: hidden
+			line-height: 0
+			border: 5px #d6d6d6 solid
+			img
+				width: 100%
+		h4
+			color: #333
+			margin-top: 35px
+			text-transform: none
+			margin-bottom: 10px
+		p
+			font-size: em(15px)
+				color: #6e7b8b
+		.team_phone
+			color: #333
+			font-family: "RobotoBold", $helvetica
+			font-size: em(17px)
+			margin-top: 20px
+
 
 				
 
