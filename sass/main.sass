@@ -1,5 +1,6 @@
 @import bourbon
 @import vars.sass
+@import ../app/libs/owl-carousel/assets/owl.carousel.sass
 
 $main-color: #f39f18
 $headers-color: #2c3949
@@ -364,6 +365,90 @@ body textarea:required:valid
 
 
 				
+.section_7
+	background-color: #e5e5e5
+	&::before
+		background-image: url("img/bah_14.png")
+
+
+.slider
+	.slide
+		text-align: center
+		position: relative
+		.img_wrap
+			width: 116px
+			height: 116px
+			display: inline-block
+			border-radius: 10em
+			margin-top: 15px
+			overflow: hidden
+			box-shadow: 0 0 0 6px $main-color
+		h3
+			text-transform: none
+			font-size: em(24px)
+			margin-bottom: 0
+		.slide_descr
+			margin-top: 10px
+			color: #394b5f
+			font-size: em(13px)
+
+.owl-controls
+	.owl-nav
+		> div
+			background-image: url(img/slider_arrows.png)
+			width: 16px
+			height: 29px
+			position: absolute
+			top: 12%
+			left: 20px
+		.owl-next
+			left: auto
+			right: 20px
+			background-position: -16px 0
+
+.owl-item
+	.img_wrap
+		opacity: 0
+		transition: all .7s ease
+		transform: translate3d(200px, 0, 0)
+		transition-delay: .1s
+	h3, .slide_descr
+		opacity: 0
+		transition: all .7s ease
+		transform: translate3d(200px, 0, 0)
+		transition-delay: .5s
+	p
+		opacity: 0
+		transition: all .7s ease
+		transform: translate3d(200px, 0, 0)
+		transition-delay: .9s
+
+	&.active
+		.img_wrap, h3, .slide_descr, p
+			opacity: 1
+			transform: translate3d(0, 0, 0)
+
+.section_8
+	.section_head
+		h2
+			text-align: left
+			margin-top: 0
+			&::after
+				transform: none
+				left: 0
+		p
+			text-align: left
+	.forms
+		background-color: #d6d6d6
+		color: #5e6267
+		h4
+			color: #2c3949
+		input
+			background-color: #c0c0c0
+			box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0.4)
+			border: none
+
+
 
 
 //ALWAYS END
